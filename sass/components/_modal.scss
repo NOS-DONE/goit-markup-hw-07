@@ -100,7 +100,7 @@
 }
 
 .modal-form-input:focus {
-    border: 1px solid var(--accent-color);
+    border: 1px solid $accent-color;
     border-radius: 4px;
 }
 
@@ -108,11 +108,11 @@
 .modal-form-input:focus + .modal-form-label,
 .modal-form-input:not(:placeholder-shown) + .modal-form-label {
     transform: translate(-32px, -36px);
-    color: var(--accent-color);
+    color: $accent-color;
 }
 
 .modal-form-input:focus ~ .modal-form-svg {
-    fill: var(--accent-color);
+    fill: $accent-color;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
@@ -131,7 +131,7 @@
 }
 
 .modal-form-message:focus {
-    border: 1px solid var(--accent-color);
+    border: 1px solid $accent-color;
     border-radius: 4px;
 }
 
@@ -179,12 +179,12 @@
 }
 
 .modal-form-checkbox:checked + .modal-form-checkbox-icon {
-    background-color: var(--accent-color);
-    border-color: var(--accent-color);
+    background-color: $accent-color;
+    border-color: $accent-color;
 }
 
 .condition {
-    color: var(--accent-color);
+    color: $accent-color;
     text-decoration: underline;
 }
 
@@ -220,5 +220,5 @@
 
 .close-button:focus .modal-form-close-svg,
 .close-button:hover .modal-form-close-svg {
-    fill: var(--accent-color);
+    fill: $accent-color;
 }

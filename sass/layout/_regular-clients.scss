@@ -31,8 +31,8 @@
 }
 
 .clients-logo-link:hover {
-    border: 1px solid var(--accent-color);
-    fill: var(--accent-color);
+    border: 1px solid $accent-color;
+    fill: $accent-color;
 }
 
 .clients-logo-link:hover svg {
@@ -40,5 +40,5 @@
 }
 
 .clients-logo-link {
-    fill: var(--icons-color);
+    fill: $icons-color;
 }

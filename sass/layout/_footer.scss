@@ -50,7 +50,7 @@ footer {
 }
 
 .footer-social-list-item:hover {
-    background-color: var(--accent-color);
+    background-color: $accent-color;
 
 }
 .footer-social-list li:not(:last-child) {
@@ -115,7 +115,7 @@ footer {
 .form-imput-email:focus,
 .form-imput-email:hover,
 .form-imput-email:not(:placeholder-shown) {
-    border-color: var(--accent-color);
+    border-color: $accent-color;
     color: rgba(255, 255, 255, 0.6);
 }
 

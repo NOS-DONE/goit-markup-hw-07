@@ -14,7 +14,7 @@
  } */
 
 .logo {
-    font-family: var(--secondary-font);
+    font-family: $secondary-font;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
@@ -29,7 +29,7 @@
 }
 
 .logo span{
-    color: var(--accent-color)
+    color: $accent-color
 }
 
 .nav {
@@ -43,11 +43,11 @@
 }
 
 .nav-item .portfolio-underline {
-    color: var(--accent-color);
+    color: $accent-color;
 }
 
 /* .current-color {
-    color: var(--accent-color);
+    color: $accent-color;
 } */
 
 
@@ -56,7 +56,7 @@
     content:"";
     width: 100%;
     height: 4px;
-    background: var(--accent-color);
+    background: $accent-color;
     margin-right: auto;
     margin-left: auto;
     border-radius: 2px;
@@ -68,7 +68,7 @@
     content:"";
     width: 100%;
     height: 4px;
-    background: var(--accent-color);
+    background: $accent-color;
     margin-right: auto;
     margin-left: auto;
     border-radius: 2px;
@@ -120,15 +120,15 @@
 }
 
 .nav-item-link:hover {
-    color: var(--accent-color);
+    color: $accent-color;
 }
 
     /* .link-current-color {
-        color: var(--accent-color);
+        color: $accent-color;
     } */
 
 .nav-item .stydio-underline {
-    color: var(--accent-color);
+    color: $accent-color;
 }
 
 .header-adress-list a {
@@ -149,7 +149,7 @@
 .header-adress-list:focus .header-icon-phone,
 .header-adress-list:hover .header-icon-mail,
 .header-adress-list:focus .header-icon-mail {
-    color: var(--accent-color);
-    fill: var(--accent-color);
+    color: $accent-color;
+    fill: $accent-color;
 
 }

@@ -1,3 +1,8 @@
+@import './utils/var';
+@import './base/base';
+@import './components/container';
+@import './components/modal';
+@import './components/section';
 @import './layout/header';
 @import './layout/hero';
 @import './layout/about-us';
@@ -6,6 +11,3 @@
 @import './layout/regular-clients';
 @import './layout/footer';
 @import './layout/portfolio';
-@import './components/container';
-@import './components/modal';
-@import './components/section';

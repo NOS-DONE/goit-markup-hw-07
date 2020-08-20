@@ -35,7 +35,7 @@
 .filter-button:hover,
 .filter-button:focus {
     color: #FFFFFF;
-    background-color: var(--accent-color);
+    background-color: $accent-color;
     box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 3px 1px rgba(0, 0, 0, 0.1);
 }
 
@@ -92,7 +92,7 @@
     font-size: 18px;
     line-height: 2.00;
     letter-spacing: 0.06em;
-    color: var(--h-color);
+    color: $h-color;
     margin-bottom: 4px;
 }
 
