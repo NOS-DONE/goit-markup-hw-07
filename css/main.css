@@ -282,10 +282,6 @@ header .container {
   align-items: center;
 }
 
-/* .web-studio-header {
-     padding-top: 24px;
-     padding-bottom: 25px;
- } */
 .logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -319,9 +315,6 @@ header .container {
   color: #2196F3;
 }
 
-/* .current-color {
-    color: $accent-color;
-} */
 .stydio-underline::after {
   display: block;
   content: "";
