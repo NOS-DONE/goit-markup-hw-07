@@ -10,9 +10,11 @@
     margin-right: 30px;
 }
 
-.about-us-list .list-item {
+.about-us-list {
+    .list-item {
     display: block;
     width: 270px;
+    }
 }
 
 .about-us-svg {
@@ -21,11 +23,6 @@
     margin-left: auto;
     margin-right: auto;
     align-items: center;
-    
-    /* padding-top: 25px;
-    padding-bottom: 25px; */
-    /* padding-right: 100px;
-    padding-left: 100px; */
 }
 
 .about-us-bg {

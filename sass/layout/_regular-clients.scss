@@ -7,10 +7,10 @@
 
 .regular-klients-list {
     display: flex;
-}
 
-.regular-klients-list li:not(:last-child) {
-    margin-right: 30px;
+    li:not(:last-child) {
+        margin-right: 30px;
+    }
 }
 
 .clients-logo-link {
@@ -23,22 +23,20 @@
     border-radius: 4px;
     transition-property: fill, border, transform;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.clients-logo-link svg {
-    transition-property: transform;
-    transition: transform 950ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.clients-logo-link:hover {
-    border: 1px solid $accent-color;
-    fill: $accent-color;
-}
-
-.clients-logo-link:hover svg {
-    transform: perspective(900px) rotateX(360deg) scale(1.5);
-}
-
-.clients-logo-link {
     fill: $icons-color;
+
+    svg {
+        transition-property: transform;
+        transition: transform 950ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &:hover {
+        border: 1px solid $accent-color;
+        fill: $accent-color;
+    }
+
+    &:hover svg {
+        transform: perspective(900px) rotateX(360deg) scale(1.5);
+    }
 }
+

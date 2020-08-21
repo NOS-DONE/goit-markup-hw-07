@@ -4,17 +4,29 @@ footer {
     background-color: #2F303A;
 }
 
-.footer .container {
+.footer {
+    .container {
     display: flex;
     padding-top: 60px;
+    }
+
+    .logo {
+        margin-bottom: 20px;
+    }
+
+    .footer-adress-link{
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.71;
+        letter-spacing: 0.03em;
+        color: #FFFFFF;
+    }
 }
 
-.footer-adress .footer-logo {
+.footer-adress {
+    .footer-logo {
     color: #ffffff;
-}
-
-.footer .logo {
-    margin-bottom: 20px;
+    }
 }
 
 .footer-adress {
@@ -47,22 +59,13 @@ footer {
     fill: #ffffff;
     transition-property: background-color;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover {
+        background-color: $accent-color;
+    }
 }
 
-.footer-social-list-item:hover {
-    background-color: $accent-color;
-
-}
 .footer-social-list li:not(:last-child) {
     margin-right: 10px;
-}
-
-.footer .footer-adress-link{
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    color: #FFFFFF;
 }
 
 .footer-adress-link.transparent {
@@ -87,6 +90,13 @@ footer {
 
 .footer-subscribe-form {
     display: flex;
+
+    .hero-button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 12px;
+    }
 }
 
 .fill-icon-send {
@@ -105,23 +115,17 @@ footer {
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     transition-property: border-color;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.form-imput-email::placeholder {
-    color: rgba(255, 255, 255, 0.6);
-    /* padding-left: 16px  ; */
-}
+    &::placeholder {
+        color: rgba(255, 255, 255, 0.6);
+    }
 
-.form-imput-email:focus,
-.form-imput-email:hover,
-.form-imput-email:not(:placeholder-shown) {
+    &:focus,
+    &:hover,
+    &:not(:placeholder-shown) {
     border-color: $accent-color;
     color: rgba(255, 255, 255, 0.6);
+    }
 }
 
-.footer-subscribe-form .hero-button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-left: 12px;
-}
+

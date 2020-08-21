@@ -12,14 +12,18 @@
     transition: opacity 450ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.backdrop.is-hidden {
+.backdrop {
+    &.is-hidden {
     opacity: 0;
     pointer-events: none;
+    }
 }
 
-.backdrop.is-hidden .modal-form {
+.backdrop.is-hidden {
+    .modal-form {
     transform: translate(-50%, -50%) scale(0.6);
     opacity: 0;
+    }
 }
 
 .modal-form {
@@ -99,9 +103,11 @@
 
 }
 
-.modal-form-input:focus {
+.modal-form-input {
+    &:focus {
     border: 1px solid $accent-color;
     border-radius: 4px;
+    }
 }
 
 
@@ -128,12 +134,13 @@
     border-radius: 4px;
     transition-property: border;
     transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:focus {
+        border: 1px solid $accent-color;
+        border-radius: 4px;
+    }
 }
 
-.modal-form-message:focus {
-    border: 1px solid $accent-color;
-    border-radius: 4px;
-}
 
 .modal-form-option-label {
     position: relative;
@@ -178,22 +185,17 @@
     background-origin: border-box;
 }
 
-.modal-form-checkbox:checked + .modal-form-checkbox-icon {
+.modal-form-checkbox:checked {
+    + .modal-form-checkbox-icon {
     background-color: $accent-color;
     border-color: $accent-color;
+    }
 }
 
 .condition {
     color: $accent-color;
     text-decoration: underline;
 }
-
-/* .condition::after {
-    display: block;
-    height: 10px;
-    width: 10px;    
-    border: 1px solid black;
-} */
 
 .close-button {
     position: absolute;
@@ -218,7 +220,19 @@
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.close-button:focus .modal-form-close-svg,
-.close-button:hover .modal-form-close-svg {
+// .close-button:focus .modal-form-close-svg,
+// .close-button:hover .modal-form-close-svg {
+//     fill: $accent-color;
+// }
+
+%btn-hover-fill-svg {
     fill: $accent-color;
+}
+
+.close-button:focus,
+.close-button:hover {
+    .modal-form-close-svg,
+    .modal-form-close-svg {
+    @extend %btn-hover-fill-svg;
+    }
 }
