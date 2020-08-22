@@ -220,14 +220,7 @@
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-// .close-button:focus .modal-form-close-svg,
-// .close-button:hover .modal-form-close-svg {
-//     fill: $accent-color;
-// }
 
-%btn-hover-fill-svg {
-    fill: $accent-color;
-}
 
 .close-button:focus,
 .close-button:hover {
