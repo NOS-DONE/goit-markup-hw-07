@@ -10,3 +10,13 @@
 %btn-hover-fill-svg {
     fill: $accent-color;
 }
+
+%style-form-input-icon {
+    transform: translate(-32px, -36px);
+    color: $accent-color;
+}
+
+%style-header-adress-list {
+    color: $accent-color;
+    fill: $accent-color;
+  }

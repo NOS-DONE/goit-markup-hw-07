@@ -64,12 +64,18 @@ footer {
     }
 }
 
-.footer-social-list li:not(:last-child) {
-    margin-right: 10px;
+.footer-social-list {
+    li {
+        &:not(:last-child) {
+        margin-right: 10px;
+        }
+    }
 }
 
-.footer-adress-link.transparent {
+.footer-adress-link {
+    &.transparent {
     color: rgba(255, 255, 255, 0.6);
+    }
 }
 
 .foter-social-title {

@@ -352,6 +352,19 @@ template {
   fill: #2196F3;
 }
 
+.modal-form-input:focus + .modal-form-label, .modal-form-input:not(:placeholder-shown) + .modal-form-label {
+  transform: translate(-32px, -36px);
+  color: #2196F3;
+}
+
+.header-adress-list a:focus,
+.header-adress-list a:hover, .header-adress-list:hover .header-icon-phone,
+.header-adress-list:hover .header-icon-mail, .header-adress-list:focus .header-icon-phone,
+.header-adress-list:focus .header-icon-mail {
+  color: #2196F3;
+  fill: #2196F3;
+}
+
 html {
   box-sizing: border-box;
 }
@@ -498,12 +511,6 @@ a {
 .modal-form-input:focus {
   border: 1px solid #2196F3;
   border-radius: 4px;
-}
-
-.modal-form-input:focus + .modal-form-label,
-.modal-form-input:not(:placeholder-shown) + .modal-form-label {
-  transform: translate(-32px, -36px);
-  color: #2196F3;
 }
 
 .modal-form-input:focus ~ .modal-form-svg {
@@ -740,16 +747,6 @@ header .container {
   margin-right: 10px;
   transition-property: fill;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.header-adress-list a:hover,
-.header-adress-list a:focus,
-.header-adress-list:hover .header-icon-phone,
-.header-adress-list:focus .header-icon-phone,
-.header-adress-list:hover .header-icon-mail,
-.header-adress-list:focus .header-icon-mail {
-  color: #2196F3;
-  fill: #2196F3;
 }
 
 /* hero-section */

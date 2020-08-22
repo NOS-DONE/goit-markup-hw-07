@@ -111,16 +111,24 @@
 }
 
 
-.modal-form-input:focus + .modal-form-label,
-.modal-form-input:not(:placeholder-shown) + .modal-form-label {
-    transform: translate(-32px, -36px);
-    color: $accent-color;
-}
-
-.modal-form-input:focus ~ .modal-form-svg {
-    fill: $accent-color;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-}
+.modal-form-input {
+    &:focus {
+      + .modal-form-label {
+        @extend %style-form-input-icon
+      }
+      ~ .modal-form-svg {
+        fill: $accent-color;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        }
+      }
+    }
+    .modal-form-input {
+      &:not(:placeholder-shown) {
+        + .modal-form-label {
+          @extend %style-form-input-icon
+        }
+      }
+  }
 
 
 .modal-form-message {
@@ -224,7 +232,6 @@
 
 .close-button:focus,
 .close-button:hover {
-    .modal-form-close-svg,
     .modal-form-close-svg {
     @extend %btn-hover-fill-svg;
     }

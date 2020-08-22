@@ -7,8 +7,10 @@
 .what-do-we-do-list {
     display: flex;
 
-    .what-our-direction:not(:last-child) {
+    .what-our-direction {
+        &:not(:last-child) {
         margin-right: 30px;
+        }
     }
 }
 

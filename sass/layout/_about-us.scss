@@ -6,8 +6,12 @@
     padding-bottom: 49px;
 }
 
-.about-us-list li:not(:last-child) {
-    margin-right: 30px;
+.about-us-list {
+    li {
+        &:not(:last-child) {
+        margin-right: 30px;
+        }
+    }
 }
 
 .about-us-list {
