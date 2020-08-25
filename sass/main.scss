@@ -1,11 +1,11 @@
-@import './utils/nomalize';
+@import './base/nomalize';
 @import './utils/var';
-@import './utils/placeholders';
 @import './base/base';
+@import './utils/placeholders';
 @import './components/container';
-@import './components/modal-btn';
+@import './components/btns';
 @import './components/modal';
-@import './components/section-title';
+@import './components/modal-form';
 @import './layout/header';
 @import './layout/hero';
 @import './layout/about-us';
